@@ -374,3 +374,169 @@ main{
 .major-content > li{
   flex: 0.16;
 }
+.major-ctn{
+  padding-bottom: 150px;
+
+}
+.major-ctn > a {
+  float: right;
+  margin-top: 80px;
+}
+.up-arrow::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 48px;
+  content: "\f139";
+  color: var(--green);
+}
+.contact-ctn{
+  background: white;
+}
+.contact-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+.contact-content > li{
+  flex: 0.25;
+}
+h2{
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.about > p{
+  margin: 20px 0;
+}
+.follow{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.icon::before{
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 28px;
+  color: lightgray;
+}
+.facebook::before{
+  content: "\f39e";
+}
+.twitter::before{
+  content: "\f099";
+}
+.feed::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f09e";
+}
+.v::before{
+  content: "\f27d";
+}
+.basket::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f434";
+}
+.people::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c0";
+}
+.archive{
+  padding: 0 30px;
+}
+.archive > p{
+  padding: 20px 0;
+  border-bottom: 1px dashed black;
+}
+.archive > p:last-child{
+  border: none;
+}
+.contact{
+  margin-top: 20px;
+}
+.contact > li{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap:15px;
+  margin-bottom: 25px;
+}
+.msg::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 32px;
+  color: lightgray;
+  content: "\f0e0";
+}
+.call::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 32px;
+  color: lightgray;
+  content: "\f879";
+}
+.phone::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 32px;
+  color: lightgray;
+  content: "\f3cd";
+}
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.newsletter > input{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  background: lightgray;
+  border: none;
+  padding: 20px;
+  border-bottom: 2px solid gray;
+  color: black;
+}
+.newsletter > input::placeholder{
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  font-style: italic;
+}
+.newsletter > button{
+  padding: 15px;
+  background: var(--green);
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+footer{
+  background: black;
+}
+footer .wrapper{
+  padding: 10px 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .wrapper ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+footer .wrapper ul li a{
+  color: white;
+  text-transform: uppercase;
+}
+footer .wrapper p{
+  color: white;
+}
