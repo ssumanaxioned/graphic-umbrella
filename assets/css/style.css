@@ -183,7 +183,7 @@ nav > p {
 .banner-ctn{
   background-color: var(--green);
 }
-.banner-ctn > .wrapper{
+.banner-ctn .wrapper{
   padding: 50px 20vw;
 }
 .banner-content{
@@ -193,12 +193,12 @@ nav > p {
   text-align: center;
 }
 .banner-content > img{
-  flex: 0.45;
+  flex: 0.49;
 }
 .banner-content > h2{
-  flex: 0.55;
+  flex: 0.49;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 36px;
   text-transform: uppercase;
   margin-top: -15vh;
   color: white;
@@ -296,17 +296,9 @@ main{
   line-height: normal;
 }
 .portfolio-ctn .wrapper > h2{
-  display: flex;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 36px;
   text-transform: uppercase;
-  justify-content: space-between;
-  align-items: center;
-}
-.dashed{
-  display: inline-block;
-  width: 60%;
-  border-top: 2px dashed gray;
 }
 .portfolio-content{
   display: flex;
@@ -318,20 +310,24 @@ main{
 }
 .content-card{
   width: calc(50% - 20px);
+  min-height: 250px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border: 1px solid gray;
 }
 .content-card > img{
   flex: 0.5;
+  width: calc(50% - 10px);
+  min-height: 250px;
+  object-fit: contain;
 }
 .content{
   flex: 0.5;
   padding: 10px 20px;
 }
 .content li{
-  padding: 5px
+  margin-bottom: 10px;
 }
 .content li h3{
   font-weight: 600;
@@ -356,12 +352,9 @@ main{
   background: var(--green);
 }
 .major-ctn .wrapper > h2{
-  display: flex;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 36px;
   text-transform: uppercase;
-  justify-content: space-between;
-  align-items: center;
 }
 .major-content{
   display:flex;
@@ -372,7 +365,15 @@ main{
   width: 100%;
 }
 .major-content > li{
-  flex: 0.16;
+  flex: 0.166;
+  box-sizing: border-box;
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(to right,gray , white);
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .major-ctn{
   padding-bottom: 150px;
@@ -398,9 +399,11 @@ main{
   justify-content: center;
   align-items: flex-start;
   text-align: left;
+  gap: 10px;
 }
 .contact-content > li{
-  flex: 0.25;
+  flex: 0.24;
+  width: calc(100% - 5px);
 }
 h2{
   font-weight: 500;
@@ -539,4 +542,88 @@ footer .wrapper ul li a{
 }
 footer .wrapper p{
   color: white;
+}
+@media (max-width:1700px) {
+  header .wrapper{
+    padding: 0 15vw;
+  }
+  .banner-ctn .wrapper{
+    padding: 50px 15vw;
+  }
+  .welcome-ctn, .portfolio-ctn, .major-ctn, .contact-ctn .wrapper{
+    padding: 50px 15vw;
+  }
+  .major-ctn > a{
+    margin-top: 30px;
+  }
+  footer .wrapper{
+    padding: 10px 15vw;
+  }
+}
+@media (max-width: 1500px) {
+  .banner-content > h2{
+    font-size: 32px;
+  }
+  .welcome-ctn .wrapper h2{
+    font-size: 32px;
+  }
+  .welcome-content li h3{
+    font-size: 32px;
+  }
+  .portfolio-ctn .wrapper > h2{
+    font-size: 32px;
+  }
+  .major-ctn .wrapper > h2{
+    font-size: 32px;
+  }
+  header .wrapper{
+    padding: 0 10vw;
+  }
+  .banner-ctn .wrapper{
+    padding: 50px 10vw;
+  }
+  .welcome-ctn, .portfolio-ctn, .major-ctn, .contact-ctn .wrapper{
+    padding: 50px 10vw;
+  }
+  .arrow-left::before{
+   margin-left: -5vw;
+  }
+  .arrow-right::before{
+    margin-right: -5vw;
+  }
+  footer .wrapper{
+    padding: 10px 10vw;
+  }
+}
+@media (max-width: 1280px){
+  .banner-content > h2{
+    font-size: 28px;
+  }
+  .welcome-ctn .wrapper h2{
+    font-size: 28px;
+  }
+  .welcome-content li h3{
+    font-size: 28px;
+  }
+  .portfolio-ctn .wrapper > h2{
+    font-size: 28px;
+  }
+  .major-ctn .wrapper > h2{
+    font-size: 28px;
+  }
+  .content{
+    padding: 8px 15px;
+  }
+  .content li h3{
+    font-size: 16px;
+  }
+  .content li p{
+    font-size: 14px;
+  }
+  h2{
+    font-size: 16px;
+  }
+  .about > p{
+    font-size: 14px;
+  }
 }
